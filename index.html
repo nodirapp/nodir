@@ -33,6 +33,9 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
+    <a-assets>
+    <img id="zamin" src="https://nodirapp.github.io/nodir/i.jpg">
+  </a-assets>
     <!-- we use cors proxy to avoid cross-origin problems -->
     <a-nft
       type="nft"
@@ -42,6 +45,12 @@
       smoothTolerance=".01"
       smoothThreshold="5"
     >
+      <a-entity
+            gltf-model="<path-to-your-model>"
+            scale="5 5 5"
+            position="50 150 0"
+        >
+        </a-entity>
     </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
